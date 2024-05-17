@@ -16,8 +16,8 @@ def reverese(s):
 
     Return a reversed version of s.
 
-    >> reverse('hello')
+    >>> reverse('hello')
     'olleh'
-    >> reverese('a')
+    >>> reverese('a')
     'a'
     """
