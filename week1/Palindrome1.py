@@ -1,7 +1,7 @@
 def is_palindrome(s):
     """ (str) -> bool
 
-    Return True if and only if s is palindrome 
+    Return True if and only if s is palindrome
 
     >>> is_palindrome('noon')
     True
@@ -11,13 +11,23 @@ def is_palindrome(s):
     False
     """
 
-def reverese(s):
+    return reverse(s)==s
+
+def reverse(s):
     """ (str) -> str
 
     Return a reversed version of s.
 
     >>> reverse('hello')
     'olleh'
-    >>> reverese('a')
+    >>> reverse('a')
     'a'
     """
+
+    rev = ''
+
+    # For each character in s, add that char to the beginning of rev.
+    for ch in s:
+        rev = ch + rev
+
+    return rev
