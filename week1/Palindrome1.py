@@ -10,3 +10,14 @@ def is_palindrome(s):
     >>> is_palindrome('dented')
     False
     """
+
+def reverese(s):
+    """ (str) -> str
+
+    Return a reversed version of s.
+
+    >> reverse('hello')
+    'olleh'
+    >> reverese('a')
+    'a'
+    """
