@@ -1,5 +1,5 @@
 def is_palindrome(s):
-    ''' (str) -> bool
+    ''' (str) --> bool
 
     Return True if and only if s is a palindrome.
 
