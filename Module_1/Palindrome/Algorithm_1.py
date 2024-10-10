@@ -1,13 +1,13 @@
-def is_palindrome(s):
+def is_palindrome_v1(s):
     """ (str) -> bool
 
     Return True if and only if s is a palindrome.
 
-    >>> is_palindrome('noon')
+    >>> is_palindrome_v1('noon')
     True
-    >>> is_palindrome('racecar')
+    >>> is_palindrome_v1('racecar')
     True
-    >>> is_palindrome('dented')
+    >>> is_palindrome_v1('dented')
     False
     """
     return reverse(s) == s
