@@ -1,5 +1,5 @@
 def is_palindrome(s):
-    ''' (str) -> bool
+    """ (str) -> bool
 
     Return True if and only if s is a palindrome.
 
@@ -9,10 +9,11 @@ def is_palindrome(s):
     True
     >>> is_palindrome('dented')
     False
-    '''
+    """
+    return reverse(s) == s
 
 def reverse(s):
-    ''' (str) -> str
+    """ (str) -> str
 
     Return a reversed version of s.
 
@@ -20,7 +21,7 @@ def reverse(s):
     'olleh'
     >>> reverse('a')
     'a'
-    '''
+    """
 
     rev = ''
 
