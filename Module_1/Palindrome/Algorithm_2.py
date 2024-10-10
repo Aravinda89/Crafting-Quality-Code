@@ -10,7 +10,12 @@ def is_palindrome_v2(s):
     >>> is_palindrome_v2('dented')
     False
     """
-    return reverse(s) == s
+
+    # number of chars in s
+    n = len(s)
+
+    # compare first half of s to reversed of second half, omit middle char
+    return s[:n//2] == reverse(s[n-n//2:])
 
 def reverse(s):
     """ (str) -> str
