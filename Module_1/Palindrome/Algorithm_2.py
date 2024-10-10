@@ -12,3 +12,21 @@ def is_palindrome_v2(s):
     """
     return reverse(s) == s
 
+def reverse(s):
+    """ (str) -> str
+
+    Return a reversed version of s.
+
+    >>> reverse('hello')
+    'olleh'
+    >>> reverse('a')
+    'a'
+    """
+
+    rev = ''
+
+    # For each char in s , add to the begging of rev
+    for ch in s:
+        rev = ch + rev
+
+    return rev
