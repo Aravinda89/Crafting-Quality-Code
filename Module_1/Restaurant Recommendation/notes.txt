@@ -13,7 +13,7 @@ price_to_names = {'$': ['Queen St. Cafe', 'Dumplings R Us', 'Deep Fried Everythi
 
 # dict {str: list of str}
 cuisine_to_name = {'Canadian': ['Georgie Porgie'],
-'Pub Food': ['Georgie Porgie', Deep Fried Everything'],
+'Pub Food': ['Georgie Porgie', 'Deep Fried Everything'],
 'Malaysian': ['Queen St. Cafe'],
 'Thai': ['Queen St. Cafe'],
 'Chinese': ['Dumplings R Us'],
