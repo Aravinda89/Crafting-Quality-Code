@@ -66,7 +66,6 @@ def recommend(file, price, cuisines_list):
     # We're done!  Return that sorted list.
     return result
     
-
 def build_rating_list(name_to_rating, names_final):
     """ (dict of {str: int}, list of str) -> list of list of [int, str]
 
