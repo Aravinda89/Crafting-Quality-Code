@@ -34,9 +34,6 @@ would produce this list:
     [[82, 'Queen St. Cafe'], [71, 'Dumplings R Us']]
 """
 
-# The file containing the restaurant data.
-FILENAME = 'restaurants_small.txt'
-
 def recommend(file, price, cuisines_list):
     """(file open for reading, str, list of str) -> list of [int, str] list
 
@@ -79,6 +76,11 @@ def build_rating_list(name_to_rating, names_final):
     >>> names = ['Queen St. Cafe', 'Dumplings R Us']
     [[82, 'Queen St. Cafe'], [71, 'Dumplings R Us']]
     """
+    final_list = []
+    for ll in names_final:
+        final_list.append([name_to_rating[ll], ll])
+    final_list.sort(reverse=True)
+    return final_list
     
 def filter_by_cuisine(names_matching_price, cuisine_to_names, cuisines_list):
     """ (list of str, dict of {str: list of str}, list of str) -> list of str
@@ -144,3 +146,12 @@ def read_restaurants(file):
             cuisine_to_names[jj].append(res[0])        
     
     return name_to_rating, price_to_names, cuisine_to_names
+
+
+# The file containing the restaurant data.
+FILENAME = 'restaurants_small.txt'
+CUISINES = ['Chinese','Thai']
+PRICE = "$"
+
+final_answer = recommend(FILENAME, PRICE, CUISINES)
+print(final_answer)
